@@ -1,0 +1,82 @@
+$font_0: Lato;
+$font_1: sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 35px;
+    color: #000000;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: $font_0, $font_1;
+}
+
+.header--section {
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    background: linear-gradient(#00000066, #00000080), url("/images/bilboard.jpg") no-repeat center center;
+    .nav--bar {
+        background-color: white;
+        .logo {
+            display: flex;
+            padding-top: 20px;
+            padding-left: 120px;
+        }
+        .nav--primary {
+            display: flex;
+            margin-left: 450px;
+            margin-top: -35px;
+            .nav--item {
+                margin: 10px;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: #666666;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .button--header {
+            background: #3535bd;
+            border: 0;
+            color: white;
+            cursor: pointer;
+            float: right;
+            font: 16px;
+            font-weight: bold;
+            height: 35px;
+            margin-top: -42px;
+            margin-right: 30px;
+            text-shadow: 0 -1px 0 #3535bd;
+            width: 120px;
+            outline: none; 
+            border-radius: 30px; 
+            box-shadow: -1px -1px 1px #3535bd, 1px 1px 0 #3535bd;
+            &:hover {
+                background: #3535bd;
+            }
+            &:active {
+                background: #3535bd;
+            }
+        }
+    }
+    .heading {
+        margin-top: 150px;
+        color: #ffffff;
+        h1 {
+            font-weight: 200px;
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+    }
+}

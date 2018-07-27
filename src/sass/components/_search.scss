@@ -1,0 +1,78 @@
+//fonts
+$font_0: Cabin;
+$font_1: helvetica;
+$font_2: arial;
+$font_3: sans-serif;
+
+.header--search {
+	background: #294063;
+	height: 120px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	form {
+		background: #294063;
+		border-radius: 5px;
+		display: inline-block;
+		font-size: 0;
+		margin: 20px auto 0;
+		padding: 20px;
+		position: relative;
+		z-index: 1;
+	}
+	input {
+		background: #12243d;
+		border: 1px solid #444;
+		border-radius: 5px 0 0 5px;
+		box-shadow: 0 2px 0 #000;
+		color: #888;
+		display: block;
+		float: left;
+		font-family: $font_0, $font_1, $font_2, $font_3;
+		font-size: 13px;
+		font-weight: 400;
+		height: 40px;
+		margin: 0;
+		padding: 0 10px;
+		text-shadow: 0 -1px 0 #294063;
+		width: 200px;
+		&:focus {
+			animation: glow 800ms ease-out infinite alternate;
+			background: #222922;
+			color: #efe;
+			outline: none;
+			&:-moz-placeholder {
+				color: #efe;
+			}
+		}
+		&:focus::-webkit-input-placeholder {
+			color: #efe;
+		}
+	}
+	button {
+		background: #3535bd;
+		box-sizing: border-box;
+		border: 1px solid #444;
+		border-left-color: #000;
+		border-radius: 0 5px 5px 0;
+		box-shadow: 0 2px 0 #000;
+		color: #fff;
+		display: block;
+		float: left;
+		font-family: $font_0, $font_1, $font_2, $font_3;
+		font-size: 13px;
+		font-weight: 400;
+		height: 40px;
+		line-height: 40px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		text-shadow: 0 -1px 0 #000;
+		width: 80px;
+		&:active {
+			background: linear-gradient(#393939, #292929);
+			box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+			top: 1px;
+		}
+	}
+}
