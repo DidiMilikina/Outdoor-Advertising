@@ -18,9 +18,11 @@ body {
 
 .header--section {
   width: 100%;
+  z-index: 0;
   height: 650px;
   text-align: center;
-  background: linear-gradient(#00000066, #00000080), url("/images/bilboard.jpg") no-repeat center center; }
+  background: linear-gradient(#00000066, #00000080), url("../../images/bilboard.jpg") no-repeat center fixed;
+  background-size: cover; }
   .header--section .nav--bar {
     background-color: white; }
     .header--section .nav--bar .logo {
@@ -147,7 +149,7 @@ body {
   text-align: center; }
 
 .locations--div {
-  background: aliceblue;
+  background-image: url("../../images/firstW.jpg");
   height: 100%; }
   .locations--div .locations {
     width: 60%;
@@ -324,7 +326,7 @@ body {
 
 .last--section {
   height: 400px;
-  background-color: aliceblue; }
+  background: url("../../images/secondW.jpg"); }
   .last--section .last--section-content {
     text-align: right;
     margin-left: 800px; }
