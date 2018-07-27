@@ -21,9 +21,14 @@ body {
 
 .header--section {
     width: 100%;
+    z-index: 0;
     height: 650px;
     text-align: center;
-    background: linear-gradient(#00000066, #00000080), url("/images/bilboard.jpg") no-repeat center center;
+    background: linear-gradient(#00000066, #00000080), url("../../images/bilboard.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     .nav--bar {
         background-color: white;
         .logo {
@@ -59,8 +64,8 @@ body {
             margin-right: 30px;
             text-shadow: 0 -1px 0 #3535bd;
             width: 120px;
-            outline: none; 
-            border-radius: 30px; 
+            outline: none;
+            border-radius: 30px;
             box-shadow: -1px -1px 1px #3535bd, 1px 1px 0 #3535bd;
             &:hover {
                 background: #3535bd;
